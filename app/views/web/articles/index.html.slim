@@ -1,0 +1,7 @@
+h1.display-4.fw-normal.text-center.mb-3 Public Articles
+.row.row-cols-1.row-cols-md-3.mb-3.text-left
+  - @collection.each do |article|
+    .col.mb-3
+      h4 = article.title
+      p = article.content
+      a.btn.btn-outline-primary href="#" Read more
