@@ -2,7 +2,7 @@ Article.delete_all
 User.delete_all
 
 users = 100.times.map do |i|
-  User.create(email: "u#{i}@example.com")
+  User.create(email: "u#{i}@example.com", password: '123')
 end
 
 articles = users.map do |user|

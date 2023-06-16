@@ -1,0 +1,1 @@
+= "document.querySelector('[data-role=counter][data-name=\"article_likes_1\"]').textContent = #{@article.reactions.select(&:like?).count}".html_safe

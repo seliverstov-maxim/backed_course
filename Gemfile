@@ -12,6 +12,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "sprockets-rails"
 gem "slim-rails"
 gem "faker"
+gem "jwt"
 
 # gem "redis", "~> 4.0"
 # gem "image_processing", "~> 1.2"

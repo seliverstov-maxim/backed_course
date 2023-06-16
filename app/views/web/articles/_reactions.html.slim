@@ -1,0 +1,8 @@
+a.btn.btn-outline-primary.me-1 href=article_reactions_path(article) data-remote="true" data-method="post"
+  ' Likes:
+  span data-role="counter" data-name="article_likes_#{article.id}" = article.reactions.select(&:like?).count
+a.btn.btn-outline-primary.me-1 href="#"
+  ' Dislikes:
+  = article.reactions.select(&:dislike?).count
+a.btn.btn-outline-primary.me-1 href="#"
+  ' Report
